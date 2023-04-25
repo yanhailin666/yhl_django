@@ -240,7 +240,7 @@ LOGGING = {
 #定时任务
 CRONJOBS = (
     ('* * * * * sleep 30', 'share_pro.views.order'),
-    ('0   0 1 * *', '你的app名.定时函数所在的py文件名.定时函数名', '> 输出文件路径和名称'),
+    ('* * * * * sleep 30', 'share_pro.views.main_inflow'),
 )
 '''
  ('*/1 * * * *', '你的app名.定时函数所在的py文件名.定时函数名'),
